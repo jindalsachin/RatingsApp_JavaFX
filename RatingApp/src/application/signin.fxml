@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignIn">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="215.0" style="-fx-background-color: cyan;" />
+      <Label layoutX="256.0" layoutY="40.0" text="Login" textFill="#178cc2">
+         <font>
+            <Font name="Times New Roman Italic" size="28.0" />
+         </font>
+      </Label>
+      <TextField id="txtusername" fx:id="txtusername" layoutX="273.0" layoutY="115.0" prefHeight="26.0" prefWidth="215.0" promptText="Username or email" />
+      <Label id="lblforgot" layoutX="265.0" layoutY="248.0" text="Forgot Password" textFill="#201c9a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button id="btnsignin" fx:id="btnsignin" layoutX="434.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" text="Signin">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button id="btnsignup" fx:id="btnsignup" layoutX="291.0" layoutY="313.0" mnemonicParsing="false" onMouseClicked="#handlesignup" prefHeight="26.0" prefWidth="191.0" text="Signup">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField id="txtpassword" fx:id="txtpassword" layoutX="273.0" layoutY="173.0" prefHeight="26.0" prefWidth="215.0" promptText="Password" />
+      <Label id="lblerror" layoutX="280.0" layoutY="199.0" prefHeight="9.0" prefWidth="206.0" textFill="#201c9a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label id="lblerror" fx:id="lblerror" layoutX="274.0" layoutY="199.0" prefHeight="12.0" prefWidth="215.0" style="-fx-background-color: yellow;" textFill="#99341d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
